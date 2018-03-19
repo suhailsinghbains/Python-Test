@@ -1,2 +1,3 @@
-print ("Yo, This is 1st ever line of code in python")
+test = raw_input("PLease Input Here: ")
+print("Your Output: "+ test)
 #This line won't be complied
