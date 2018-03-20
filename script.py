@@ -1,3 +1,5 @@
 print("Enter your name and it will greet you.")
 Name = raw_input("ENTER NAME: ")
 print("Good Morning " + Name + "!!")
+print("Now, messing up your name:")
+print(Name[0]+"-"+Name[1]+"-"+Name[2]+"-"+Name[3]+"-"+Name[4]+"-"+Name[5])
