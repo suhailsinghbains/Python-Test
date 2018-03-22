@@ -1,5 +1,14 @@
-print("Enter your name and it will greet you.")
-Name = raw_input("ENTER NAME: ")
-print("Good Morning " + Name + "!!")
-print("Now, messing up your name:")
-print(Name[0]+"-"+Name[1]+"-"+Name[2]+"-"+Name[3]+"-"+Name[4]+"-"+Name[5])
+# Enter Time and It will greet you
+ch = raw_input("Enter Time: ")
+if ch<'0000':
+    print("Invalid Time")
+elif ch<'1200':
+    print("Good Morning!")
+elif ch<'1600':
+    print("Good Afternoon!")
+elif ch<'2000':
+    print("Good Everning!")
+elif ch<='2400':
+    print("Good Night!")
+else:
+    print("Invalid Time")
