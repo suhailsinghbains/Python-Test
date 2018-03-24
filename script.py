@@ -1,10 +1,15 @@
-#Insert Square into a new List
-start_list = [5, 3, 1, 2, 4]
-square_list = []
+#Playing around with keys and objects
+inventory = {
+  'gold' : 500,
+  'pouch' : ['flint', 'twine', 'gemstone'], # Assigned a new list to 'pouch' key
+  'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']
+}
 
-start_list.sort()
-for number in start_list:
-  square_list.append(number**2)
+inventory['burlap bag'] = ['apple', 'small ruby', 'three-toed sloth']
 
+inventory['pouch'].sort()
 
-print square_list
+inventory['pocket']=['seashell','strange berry','lint']
+inventory['backpack'].sort()
+inventory['backpack'].remove('dagger')
+inventory['gold']+=50
