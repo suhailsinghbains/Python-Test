@@ -1,5 +1,10 @@
-#Search a particular entity and Insert at a particular position 
-animals = ["aardvark", "badger", "duck", "emu", "fennec fox"]
-duck_index = animals.index("duck")
-animals.insert(duck_index, "cobra")
-print  animals
+#Insert Square into a new List
+start_list = [5, 3, 1, 2, 4]
+square_list = []
+
+start_list.sort()
+for number in start_list:
+  square_list.append(number**2)
+
+
+print square_list
