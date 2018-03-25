@@ -1,15 +1,14 @@
-#Playing around with keys and objects
-inventory = {
-  'gold' : 500,
-  'pouch' : ['flint', 'twine', 'gemstone'], # Assigned a new list to 'pouch' key
-  'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']
-}
+#Messing Name with FOR Loop
+Name = raw_input("Enter your Name: ")
+print("H")
+print("i")
+print
+for letter in Name:
+  print letter
 
-inventory['burlap bag'] = ['apple', 'small ruby', 'three-toed sloth']
+print
+print
+word = "Just Messing"
 
-inventory['pouch'].sort()
-
-inventory['pocket']=['seashell','strange berry','lint']
-inventory['backpack'].sort()
-inventory['backpack'].remove('dagger')
-inventory['gold']+=50
+for letter in word:
+    print letter
