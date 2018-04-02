@@ -1,5 +1,6 @@
-#Counting
-print "Counting..."
+# Keys & Values
+d = {'a': 'apple', 'b': 'berry', 'c': 'cherry'}
 
-for i in range(20):
-  print i
+for key in d:
+  # Your code here!
+  print key + " " + d[key]
