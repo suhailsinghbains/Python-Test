@@ -1,6 +1,8 @@
-# Keys & Values
-d = {'a': 'apple', 'b': 'berry', 'c': 'cherry'}
-
-for key in d:
-  # Your code here!
-  print key + " " + d[key]
+# Factorial
+def factorial(x):
+  num = x
+  pro=1
+  while (num>0):
+    pro*=num
+    num-=1;
+  return pro
