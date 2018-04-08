@@ -1,7 +1,7 @@
-# Counting in Object
-def count(sequence, item):
-  count=0;
-  for num in sequence:
-    if(num==item):
-      count+=1;
-  return count
+# Purify
+def purify(obj):
+  test=[]
+  for num in obj:
+    if(num%2==0):
+      test.append(num)
+  return test
