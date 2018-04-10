@@ -1,8 +1,13 @@
-# Product from Object
-def product(obj):
-  product=1
-  for num in obj:
-    product*=num
-  return product
-
-print (product([3,4,5,6]))
+# Remove Duplicates
+def remove_duplicates(obj):
+  new=[]
+  for item in obj:
+    if(test(new,item)==False):
+      new.append(item)
+  return new
+def test(obj,num):
+  for item in obj:
+    if(item==num):
+      return True
+  else:
+    return False
