@@ -1,7 +1,8 @@
-# Purify
-def purify(obj):
-  test=[]
+# Product from Object
+def product(obj):
+  product=1
   for num in obj:
-    if(num%2==0):
-      test.append(num)
-  return test
+    product*=num
+  return product
+
+print (product([3,4,5,6]))
