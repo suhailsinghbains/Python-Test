@@ -1,13 +1,10 @@
-# Remove Duplicates
-def remove_duplicates(obj):
-  new=[]
-  for item in obj:
-    if(test(new,item)==False):
-      new.append(item)
-  return new
-def test(obj,num):
-  for item in obj:
-    if(item==num):
-      return True
+# Median
+def median(obj):
+  l = len(obj)
+  obj = sorted(obj)
+  if(l%2==0)and(l!=1):
+    return ((obj[(l/2)-1]+obj[l/2])/2.)
   else:
-    return False
+    return obj[l/2]
+
+print (median([1]))
