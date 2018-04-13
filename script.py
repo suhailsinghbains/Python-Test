@@ -1,10 +1,25 @@
-# Median
-def median(obj):
-  l = len(obj)
-  obj = sorted(obj)
-  if(l%2==0)and(l!=1):
-    return ((obj[(l/2)-1]+obj[l/2])/2.)
-  else:
-    return obj[l/2]
+# Maths Stuff using Students of a class
+grades = [100, 100, 90, 40, 80, 100, 85, 70, 90, 65, 90, 85, 50.5]
 
-print (median([1]))
+def print_grades(grades_input):
+  for grade in grades_input:
+    print grade
+
+def grades_sum(scores):
+  total = 0
+  for score in scores:
+    total += score
+  return total
+
+def grades_average(grades_input):
+  sum_of_grades = grades_sum(gradeen(grades_input))
+  return average
+
+def grades_variance(scores):
+    average = grades_average(scores)
+    variance = 0
+    for score in scores:
+        variance += (average - score) ** 2
+    return variance / len(scores)
+def grades_std_deviation(variance):
+  return variance**0.5
