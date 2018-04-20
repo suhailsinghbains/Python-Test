@@ -1,5 +1,2 @@
-#Auto
-print bin(2)
-print bin(3)
-print bin(4)
-print bin(5)
+#AND_Operator
+print bin(0b1110 & 0b101)
