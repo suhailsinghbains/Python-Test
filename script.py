@@ -1,7 +1,5 @@
-#Check4thBit
-def check_bit4(input):
-  x = input & 0b1000
-  if x:
-    return "on"
-  else:
-    return "off"
+# Flip the Bit
+def flip_bit(number, n):
+  bit_to_flip = 0b1 << (n -1)
+  result = number ^ bit_to_flip
+  return bin(result)
