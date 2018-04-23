@@ -1,5 +1,24 @@
-# Flip the Bit
-def flip_bit(number, n):
-  bit_to_flip = 0b1 << (n -1)
-  result = number ^ bit_to_flip
-  return bin(result)
+#Classes in Python
+class Fruit(object):
+  """A class that makes various tasty fruits."""
+  def __init__(self, name, color, flavor, poisonous):
+    self.name = name
+    self.color = color
+    self.flavor = flavor
+    self.poisonous = poisonous
+
+  def description(self):
+    print "I'm a %s %s and I taste %s." % (self.color, self.name, self.flavor)
+
+  def is_edible(self):
+    if not self.poisonous:
+      print "Yep! I'm edible."
+    else:
+      print "Don't eat me! I am super poisonous."
+
+lemon = Fruit("lemon", "yellow", "sour", False)
+
+lemon.description()
+lemon.is_edible()
+'''Python is an object-oriented programming language, which means it manipulates programming constructs called objects. You can think of an object as a single data structure that contains data as well as functions; the functions of an object are called its methods.
+Python is checking to see whether the string object you passed it has a length, and if it does, it returns the value associated with that attribute.'''
