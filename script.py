@@ -1,3 +1,4 @@
-#First Ever Class written in Python
+#First Ever Class Under Construction
 class Animal(object):
-  pass
+  def __init__(self):
+    pass
