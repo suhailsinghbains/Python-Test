@@ -1,16 +1,24 @@
 #First Ever Class Under Construction
-class Animal(object):
-  """Makes cute animals."""
-  is_alive = True
-  health = "good"
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
-  def description(name,age):
-  	print name,age
-hippo = Animal("Jake", 12)
-sloth = Animal("Yo" ,13)
-ocelot = Animal("Yo1", 14)
-print hippo.health
-print sloth.health
-print ocelot.health
+class ShoppingCart(object):
+  """Creates shopping cart objects
+  for users of our fine website."""
+
+  def __init__(self, customer_name):
+    self.customer_name = customer_name
+    self.items_in_cart = {"Banana"}
+  def add_item(self, product, price):
+    """Add product to the cart."""
+    if not product in self.items_in_cart:
+      self.items_in_cart[product] = price
+      print product + " added."
+    else:
+      print product + " is already in the cart."
+
+  def remove_item(self, product):
+    """Remove product from the cart."""
+    if product in self.items_in_cart:
+      del self.items_in_cart[product]
+      print product + " removed."
+    else:
+      print product + " is not in the cart."
+my_cart = ShoppingCart("Suhail")
