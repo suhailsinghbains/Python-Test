@@ -1,4 +1,4 @@
-#More Inheritence
+#Super keyword
 class Employee(object):
   """Models real-life employees!"""
   def __init__(self, employee_name):
@@ -13,3 +13,8 @@ class PartTimeEmployee(Employee):
   def calculate_wage(self, hours):
     self.hours = hours
     return hours * 12.00
+  def full_time_wage(self, hours):
+    return super(PartTimeEmployee, self).calculate_wage(hours)
+
+milton = PartTimeEmployee("Suhail")
+print milton.calculate_wage(10)
