@@ -1,11 +1,10 @@
-# New Class Point3D
-class Point3D(object):
-  def __init__(self, x, y, z):
-    self.x=x
-    self.y=y
-    self.z=z
-  def __repr__(self):
-    return "(%d, %d, %d)" % (self.x, self.y, self.z)
+# Files
+my_list = [i ** 2 for i in range(1, 11)]
+# Generates a list of squares of the numbers 1 - 10
 
-my_point = Point3D(1,2,3)
-print my_point
+f = open("output.txt", "w")
+
+for item in my_list:
+  f.write(str(item) + "\n")
+
+f.close()
